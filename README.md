@@ -51,8 +51,8 @@ This project was developed as part of my onboarding to gain hands-on experience 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/zdraveska/node-onboarding-weather-app.git
-cd node-onboarding-weather-app
+git clone https://github.com/zdraveska/weather-app.git
+cd weather-app
 ```
 
 ### 2. Install dependencies
