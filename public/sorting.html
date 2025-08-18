@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Page</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button class="back-btn" id="backBtn">← Back</button>
+      <h1>Sort Your Strings</h1>
+
+      <input type="text" id="stringInput" placeholder="e.g. apple,banana,cherry" />
+      <button id="sortBtn">Sort Array of Strings</button>
+
+      <div class="note">Please separate words with commas.</div>
+
+      <div id="sortContainer" style="display: none; position: relative; margin-top: 15px">
+        <p id="sortResult" style="margin: 0"></p>
+        <button id="sortCloseBtn" class="close-btn">×</button>
+      </div>
+    </div>
+
+    <script src="js/sorting.js"></script>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f2f5;
+}
+
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.home-container button {
+  display: block;
+  width: 200px;
+  margin: 15px auto;
+}
+
+input[type='text'] {
+  width: 200px;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background: #007bff;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.back-btn {
+  background: #dc3545;
+  margin-bottom: 15px;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* space between cards */
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.card p {
+  margin: 3px 0;
+  font-size: 14px;
+}
+
+#sortResult {
+  margin-top: 10px;
+  padding: 10px;
+  background: #f7f7f7;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  min-height: 30px;
+  font-size: 14px;
+}
+
+#stringInput {
+  width: 80%;
+  max-width: 300px;
+  margin-bottom: 10px;
+}
+
+#sortContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#sortCloseBtn {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  display: none;
+  background-color: white;
+  color: red;
+  border-color: black;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sortCloseBtn:hover {
+  background-color: #a71d2a;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 10px;
+}
