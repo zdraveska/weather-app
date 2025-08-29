@@ -1,6 +1,9 @@
+import { DateTime } from 'luxon';
+
 export const getDateTime = (_req, res) => {
-  const now = new Date();
-  const date = now.toISOString().split('T')[0];
-  const time = now.toTimeString().split(' ')[0];
+  const now = DateTime.local();
+  const date = now.toISODate();
+  const time = now.toFormat('HH:mm:ss');
+
   res.json({ date, time });
 };

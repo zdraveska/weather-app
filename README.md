@@ -41,6 +41,7 @@ This project was developed as part of my onboarding to gain hands-on experience 
 ├── package-lock.json
 ├── package.json
 ├── .env
+├── .env.example
 
 ```
 
@@ -57,7 +58,7 @@ cd weather-app
 
 ### 2. Install dependencies
 
-```
+```bash
 npm install
 ```
 
@@ -65,24 +66,21 @@ npm install
 
 Create a .env file in the root directory:
 
-```
-PORT=8141
-JWT_SECRET=yourSecretHere
-WEATHER_API_KEY=yourOpenWeatherAPIKey
-WEATHER_API_URL=https://api.openweathermap.org/data/2.5/weather
+```bash
+cp .env.example .env
 ```
 
 To obtain an API key, [create a free OpenWeather account](https://openweathermap.org/) and generate your key at https://home.openweathermap.org/api_keys.
 
 ### 4. Run the server
 
-```
+```bash
 npm run start
 ```
 
 or
 
-```
+```bash
 npm run dev
 ```
 
